@@ -1,5 +1,5 @@
 # doom-lighttable-theme
 
-![Screenshot](Screenshot1)
-![Screenshot](Screenshot2)
-![Screenshot](Screenshot3)
+![Screenshot](Screenshot1.png)
+![Screenshot](Screenshot2.png)
+![Screenshot](Screenshot3.png)
