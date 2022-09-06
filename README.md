@@ -1,0 +1,1 @@
+# doom-lighttable-theme
