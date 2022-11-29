@@ -208,14 +208,16 @@ Can be an integer to determine the exact padding."
    (org-level-8 :foreground "#a096fa")
    (org-todo :foreground "#AAEECC")
 
+   (isearch :background "#295E5F" :foreground "#6DFBFD")
+
    (swiper-line-face :background fg :foreground bg)
    (swiper-background-match-face-1 :background "#295E5F" :foreground "#6DFBFD")
    (swiper-background-match-face-2 :background "#295E5F" :foreground "#6DFBFD")
    (swiper-background-match-face-3 :background "#295E5F" :foreground "#6DFBFD")
-   (swiper-match-face-1 :background "#478585" :foreground bg)
-   (swiper-match-face-2 :background "#478585" :foreground bg)
-   (swiper-match-face-3 :background "#478585" :foreground bg)
-   (swiper-match-face-4 :background "#478585" :foreground bg)
+   (swiper-match-face-1 :background "#295E5F" :foreground "#6DFBFD")
+   (swiper-match-face-2 :background "#295E5F" :foreground "#6DFBFD")
+   (swiper-match-face-3 :background "#295E5F" :foreground "#6DFBFD")
+   (swiper-match-face-4 :background "#295E5F" :foreground "#6DFBFD")
 
    )
 
