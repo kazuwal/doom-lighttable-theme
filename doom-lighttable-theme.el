@@ -87,7 +87,7 @@ Can be an integer to determine the exact padding."
    ;; These *must* be included in every doom themes, or your theme will throw an
    ;; error, as they are used in the base theme defined in doom-themes-base.
 
-   (highlight      "#AACCFF")
+   (highlight      fg)
    (vertical-bar   "#202020")
    (selection      "#383838")
    (builtin        "#CCAAFF")
