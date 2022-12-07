@@ -71,11 +71,12 @@ Can be an integer to determine the exact padding."
    (base8      '("#CCCCCC" "#CCCCCC"     "#CCCCCC"      ))
 
    (grey       base4)
+   (silver     '("#c0c0c0" "#c0c0c0" "#c0c0c0"      ))
    (red        '("#EE4B2B" "#EE4B2B" "#EE4B2B"      ))
    (orange     '("#FFCCAA" "#FFCCAA" "#FFCCAA"      ))
    (green      '("#AAFFCC" "#AAFFCC" "#AAFFCC"      ))
    (teal       '("#4db5bd" "#4db5bd" "#4db5bd"      ))
-   (yellow     '("#DDFFAA" "#DDFFAA" "#DDFFAA"      ))
+   (yellow     '("#FFB81C" "#FFB81C" "#FFB81C"      ))
    (blue       '("#AACCFF" "#AACCFF" "#AACCFF"      ))
    (dark-blue  '("#6A809F" "#6A809F" "#6A809F"      ))
    (magenta    '("#6DFBFD" "#6DFBFD" "#6DFBFD"      ))
@@ -112,8 +113,8 @@ Can be an integer to determine the exact padding."
 
    ;; These are extra color variables used only in this theme; i.e. they aren't
    ;; mandatory for derived themes.
-   (modeline-fg              fg)
-   (modeline-fg-alt          fg)
+   (modeline-fg              silver)
+   (modeline-fg-alt          silver)
    (modeline-bg              bg)
    (modeline-bg-alt          bg)
    (modeline-bg-inactive     bg)
@@ -151,7 +152,7 @@ Can be an integer to determine the exact padding."
    (css-property             :foreground green)
    (css-selector             :foreground blue)
    ;;;; doom-modeline
-   (doom-modeline-bar :background fg)
+   (doom-modeline-bar :background silver)
    (doom-modeline-buffer-file :foreground bg)
    (doom-modeline-evil-normal-state :foreground "#AAEECC")
    (doom-modeline-evil-insert-state :foreground "#AACCFF")
@@ -160,15 +161,15 @@ Can be an integer to determine the exact padding."
    (doom-modeline-buffer-modified :foreground red)
    (doom-modeline-buffer-major-mode :foreground bg)
    (doom-modeline-eldoc-bar :background green)
-   (doom-modeline-bar-inactive :background fg) ; transparent
+   (doom-modeline-bar-inactive :background silver) ; transparent
    ;; (mode-line           :background bg     :foreground fg     :distant-foreground bg)
    ;; (mode-line-active    :inherit 'mode-line)
    ;; (mode-line-inactive  :background bg-alt :foreground fg-alt :distant-foreground bg-alt)
-   (mode-line-emphasis  :foreground bg :background fg)
-   (mode-line-highlight :foreground bg :background fg)
+   (mode-line-emphasis  :foreground bg :background silver)
+   (mode-line-highlight :foreground bg :background silver)
    (mode-line-buffer-id :foreground bg)
    (header-line :foreground bg)
-   (header-line-highlight :foreground fg)
+   (header-line-highlight :foreground silver)
    (lazy-highlight :background "#295E5F" :foreground "#6DFBFD")
    (isearch :background "#295E5F" :foreground "#6DFBFD")
    (highlight :background "#295E5F" :foreground "#6DFBFD")
@@ -194,12 +195,10 @@ Can be an integer to determine the exact padding."
    (nav-flash-face :background "#295E5F" :foreground "#6DFBFD")
 
    (solaire-mode-line-face
-    :background modeline-bg :foreground modeline-fg
-    :box `(:line-width 3 :color "#393939"))
+    :background modeline-fg :foreground modeline-bg)
 
    (solaire-mode-line-inactive-face
-    :background modeline-bg :foreground modeline-fg
-    :box `(:line-width 3 :color "#393939"))
+    :background modeline-fg :foreground modeline-bg)
 
    (rainbow-delimiters-depth-1-face :foreground "#aaa")
    (rainbow-delimiters-depth-2-face :foreground "#aaa")
