@@ -70,19 +70,19 @@ Can be an integer to determine the exact padding."
    (base7      '("#CCCCCC" "#CCCCCC"     "#CCCCCC"      ))
    (base8      '("#CCCCCC" "#CCCCCC"     "#CCCCCC"      ))
 
-   (grey       base4)
+   (grey       "#CCCCCC")
    (silver     '("#c0c0c0" "#c0c0c0" "#c0c0c0"      ))
-   (red        '("#EE4B2B" "#EE4B2B" "#EE4B2B"      ))
-   (orange     '("#FFCCAA" "#FFCCAA" "#FFCCAA"      ))
+   (red        '("#F96951" "#F96951" "#F96951"      ))
+   (orange     '("#EA7810" "#EA7810" "#EA7810"      ))
    (green      '("#AAFFCC" "#AAFFCC" "#AAFFCC"      ))
-   (teal       '("#4db5bd" "#4db5bd" "#4db5bd"      ))
-   (yellow     '("#FFB81C" "#FFB81C" "#FFB81C"      ))
+   (teal       '("#295E5F" "#295E5F" "#295E5F"      ))
+   (yellow     '("#F6E382" "#F6E382" "#F6E382"      ))
    (blue       '("#AACCFF" "#AACCFF" "#AACCFF"      ))
    (dark-blue  '("#6A809F" "#6A809F" "#6A809F"      ))
    (magenta    '("#6DFBFD" "#6DFBFD" "#6DFBFD"      ))
    (violet     '("#a096fa" "#a096fa" "#a096fa"      ))
-   (cyan       '("#96f0fa" "#96f0fa" "#96f0fa"      ))
-   (dark-cyan  '("#3c6064" "#3c6064" "#3c6064"      ))
+   (cyan       '("#73FEFF" "#73FEFF" "#73FEFF"      ))
+   (dark-cyan  '("#57c8ca" "#57c8ca" "#57c8ca"      ))
 
    ;; These are the "universal syntax classes" that doom-themes establishes.
    ;; These *must* be included in every doom themes, or your theme will throw an
@@ -154,11 +154,11 @@ Can be an integer to determine the exact padding."
    ;;;; doom-modeline
    (doom-modeline-bar :background silver)
    (doom-modeline-buffer-file :foreground bg)
-   (doom-modeline-evil-normal-state :foreground "#AAEECC")
-   (doom-modeline-evil-insert-state :foreground "#AACCFF")
+   (doom-modeline-evil-normal-state :foreground "#007E82")
+   (doom-modeline-evil-insert-state :foreground "#945CA0")
    (doom-modeline-project-dir :foreground bg)
    (doom-modeline-buffer-path :foreground bg)
-   (doom-modeline-buffer-modified :foreground red)
+   (doom-modeline-buffer-modified :foreground "#830000")
    (doom-modeline-buffer-major-mode :foreground bg)
    (doom-modeline-eldoc-bar :background green)
    (doom-modeline-bar-inactive :background silver) ; transparent
@@ -330,6 +330,20 @@ Can be an integer to determine the exact padding."
     (all-the-icons-red-alt    :foreground bg)
     (all-the-icons-silver     :foreground bg)
     (all-the-icons-yellow     :foreground bg)
+
+    (spaceline-highlight-face   :foreground bg)
+    (spaceline-modified         :foreground bg)
+    (spaceline-unmodified       :foreground bg)
+    (spaceline-python-venv      :foreground bg)
+    (spaceline-flycheck-error   :foreground bg)
+    (spaceline-flycheck-warning :foreground bg)
+    (spaceline-flycheck-info    :foreground bg)
+    ;; (spaceline-evil-normal      :foreground bg)
+    ;; (spaceline-evil-insert      :foreground bg)
+    (spaceline-evil-emacs       :foreground bg)
+    (spaceline-evil-replace     :foreground bg)
+    (spaceline-evil-visual      :foreground bg)
+    (spaceline-evil-motion      :foreground bg)
 
    )
 
