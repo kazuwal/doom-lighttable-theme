@@ -72,9 +72,13 @@ Can be an integer to determine the exact padding."
 
    (grey       "#CCCCCC")
    (silver     '("#c0c0c0" "#c0c0c0" "#c0c0c0"      ))
-   (red        '("#EC8A88" "#EC8A88" "#EC8A88"      ))
+   (red        '("#fa706b" "#fa706b" "#fa706b"      ))
+   (bright-red '("#B81D13" "#B81D13" "#B81D13"      ))
    (orange     '("#FFAD75" "#FFAD75" "#FFAD75"      ))
-   (green      '("#AAFFCC" "#AAFFCC" "#AAFFCC"      ))
+   (bright-orange '("#FFA500" "#FFA500" "#FFA500"))
+   (green      '("#AAEECC" "#AAEECC" "#AAEECC"     ))
+   (bright-green '("#008450" "#008450" "#008450"))
+   (bright-yellow '("#EFB700" "#EFB700" "#EFB700"    ))
    (teal       '("#295E5F" "#295E5F" "#295E5F"      ))
    (yellow     '("#F6E382" "#F6E382" "#F6E382"      ))
    (blue       '("#AACCFF" "#AACCFF" "#AACCFF"      ))
@@ -104,9 +108,9 @@ Can be an integer to determine the exact padding."
    (variables      "#AACCFF")
    (numbers        "#9DD3D3")
    (region         "#353535")
-   (error          red)
-   (warning        yellow)
-   (success        green)
+   (error          bright-red)
+   (warning        bright-yellow)
+   (success        bright-green)
    (vc-modified    orange)
    (vc-added       green)
    (vc-deleted     red)
@@ -154,17 +158,16 @@ Can be an integer to determine the exact padding."
    ;;;; doom-modeline
    (doom-modeline-bar :background silver)
    (doom-modeline-buffer-file :foreground bg)
-   (doom-modeline-evil-normal-state :foreground "#007E82")
-   (doom-modeline-evil-insert-state :foreground "#945CA0")
+   (doom-modeline-evil-normal-state :foreground "#008450")
+   (doom-modeline-evil-insert-state :foreground "#556AD7")
    (doom-modeline-project-dir :foreground bg)
    (doom-modeline-buffer-path :foreground bg)
    (doom-modeline-buffer-modified :foreground "#830000")
    (doom-modeline-buffer-major-mode :foreground bg)
    (doom-modeline-eldoc-bar :background green)
    (doom-modeline-bar-inactive :background silver) ; transparent
-   ;; (mode-line           :background bg     :foreground fg     :distant-foreground bg)
-   ;; (mode-line-active    :inherit 'mode-line)
-   ;; (mode-line-inactive  :background bg-alt :foreground fg-alt :distant-foreground bg-alt)
+   (doom-modeline-lsp-icon :foreground bg)
+
    (mode-line-emphasis  :foreground bg :background silver)
    (mode-line-highlight :foreground bg :background silver)
    (mode-line-buffer-id :foreground bg)
@@ -177,6 +180,9 @@ Can be an integer to determine the exact padding."
    (elscreen-tab-other-screen-face :background "#353a42" :foreground "#1e2022")
    ;;;; ivy
    (ivy-current-match :foreground bg :background fg)
+   (ivy-modified-buffer :foreground yellow)
+   (ivy-confirm-face :foreground green)
+
    ;;;; LaTeX-mode
    (font-latex-math-face :foreground green)
    ;;;; markdown-mode
@@ -338,6 +344,7 @@ Can be an integer to determine the exact padding."
     (spaceline-flycheck-error   :foreground bg)
     (spaceline-flycheck-warning :foreground bg)
     (spaceline-flycheck-info    :foreground bg)
+
     ;; (spaceline-evil-normal      :foreground bg)
     ;; (spaceline-evil-insert      :foreground bg)
     (spaceline-evil-emacs       :foreground bg)
