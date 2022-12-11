@@ -72,8 +72,8 @@ Can be an integer to determine the exact padding."
 
    (grey       "#CCCCCC")
    (silver     '("#c0c0c0" "#c0c0c0" "#c0c0c0"      ))
-   (red        '("#F96951" "#F96951" "#F96951"      ))
-   (orange     '("#EA7810" "#EA7810" "#EA7810"      ))
+   (red        '("#EC8A88" "#EC8A88" "#EC8A88"      ))
+   (orange     '("#FFAD75" "#FFAD75" "#FFAD75"      ))
    (green      '("#AAFFCC" "#AAFFCC" "#AAFFCC"      ))
    (teal       '("#295E5F" "#295E5F" "#295E5F"      ))
    (yellow     '("#F6E382" "#F6E382" "#F6E382"      ))
