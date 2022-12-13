@@ -110,7 +110,7 @@ Can be an integer to determine the exact padding."
    (region         "#353535")
    (error          bright-red)
    (warning        orange)
-   (success        bright-green)
+   (success        green)
    (vc-modified    orange)
    (vc-added       green)
    (vc-deleted     red)
